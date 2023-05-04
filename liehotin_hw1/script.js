@@ -32,8 +32,6 @@ function getSecondNumber() {
   getSecondNumber();
 
 
-  let answer = firstNumber + secondNumber;
-
 if (mathOperator === 'add') {
     alert(`${firstNumber} + ${secondNumber} = ${(firstNumber + secondNumber)}`)
 } else {
