@@ -7,7 +7,7 @@ if (!yearOfBirth) {
 } else if (yearOfBirth > 1900 && yearOfBirth < 2023) {
     messageAboutAge = `You are ${2023 - yearOfBirth} years old`;
 } else {
-    alert('Incorrect year of birth! Please, enter year from 1900 to 2023')
+    alert('Incorrect year of birth! Please, enter year from 1900 to 2023');
 }
 
 const city = prompt('Please, enter your city');
@@ -54,13 +54,13 @@ if (sport) {
             idol = null;
         break;
     }
-    if (idol != null) messageAboutSport = `Great! Would you be like ${idol}?`;
+    if (idol) messageAboutSport = `Great! Would you be like ${idol}?`;
 } else {
 alert('We are sorry that you did not want to enter your favourite kind of sport');
 }
 
-alert(
-`${messageAboutAge}  
-${messageAboutCity}
-${messageAboutSport}`
-);
+if(messageAboutAge || messageAboutCity || messageAboutSport) {
+    alert(`${messageAboutAge}\n${messageAboutCity}\n${messageAboutSport}`);
+} else {
+    alert('Sorry, but you did not enter enough information');
+}

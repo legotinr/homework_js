@@ -101,3 +101,12 @@ if(year%4 != 0) {
 } else {
     console.log('leap year')
 }*/
+const a = ''
+const b = ''
+const c = ''
+
+if (a || b || c) {
+    console.log('true')
+} else {
+    console.log('false')
+}
