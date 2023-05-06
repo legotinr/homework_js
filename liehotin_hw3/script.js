@@ -60,6 +60,3 @@ alert(`${messageAboutAge}
 ${messageAboutCity}
 ${messageAboutSport}`
 )
-/*alert(`You are ${2023 - yearOfBirth} years old
-You live in ${textAboutCity}
-Great! Would you be like ${idol}?`)*/
