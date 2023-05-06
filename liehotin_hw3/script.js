@@ -1,4 +1,4 @@
-const yearOfBirth = prompt('Please, enter your yaer of birth')
+const yearOfBirth = prompt('Please, enter your year of birth')
 let messageAboutAge = `You are ${2023 - yearOfBirth} years old`
 
 if (yearOfBirth === null) {alert('We are sorry that you did not want to enter your year of birth') 
@@ -38,7 +38,7 @@ messageAboutSport = ''
 } else {
 
 switch (sport.toLowerCase()) {
-    case 'foorball':
+    case 'football':
         idol = 'Cristiano Ronaldo'
     break;
     case 'basketball':
