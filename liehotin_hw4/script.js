@@ -35,13 +35,12 @@
 // task 4
 
 // const n = 1999;
-// let result;
+// let i;
 
-// for (let i = 2; i<=n; i++) {
-//         result = i;
+// for (i = 2; i<=n; i++) {
 //     if(n%i === 0) { break; };
 // }
-// if (result === n) {
+// if (i === n) {
 //     console.log(`${n} - prime number`);
 // } else {
 //     console.log(`${n} - composite number`);
