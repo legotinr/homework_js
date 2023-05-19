@@ -54,19 +54,15 @@ let users = [
     "address": "314 Dunne Place, Bawcomville, Guam, 9053"
     }
     ]
-const phoneNumber = [];
-const balances = [];
 
-for (let i=0; i < users.length; i++) {
-    if(users[i].balance.replace(/\$/, '').replace(/\,/, '') > 2000) {
-        phoneNumber.push(users[i].phone);
-    }
-    balances.push(Number(users[i].balance.replace(/\$/, '').replace(/\,/, '')));
-}
+let phoneNumber = '';
+let sumOfBalance = 0;
 
-let balanceSum = balances.reduce(function(sum, current) {
-    return sum + current;
-}, 0);
+users.forEach(function getNumbers(element) {
+  if (Number(element.balance.replace("$", "").replace(",","")) > 2000)
+  phoneNumber += `${element.phone}, `;
+    sumOfBalance += Number(element.balance.replace("$", "").replace(",",""));
+});
 
 console.log(phoneNumber);
-console.log(`$ ${Math.round(balanceSum * 100) / 100}`);
+console.log(`$ ${Math.round(sumOfBalance * 100) / 100}`);
