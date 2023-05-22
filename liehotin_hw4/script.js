@@ -8,17 +8,15 @@
 
 // task 2
 
-// const oneDollar = 27;
-// const prices = {
+const oneDollar = 27;
+const prices = {};
 
-// };
+for (let count = 10; count <= 100; count += 10) {
+    if (!prices[count]) prices[count] = [];
+    prices[count].push(count * oneDollar);
+}
 
-// for (let count = 10; count <= 100; count += 10) {
-//     if (!prices[count]) prices[count] = [];
-//     prices[count].push(count * oneDollar);
-// }
-
-// console.log(prices);
+console.log(prices);
 
 // task 3
 
@@ -48,16 +46,16 @@
 
 // task 5
 
-const number = 720;
-let pow = 1;
-    for (; 3**pow <= number; pow++) {
-        if (number%3**pow != 0 || number === 3**pow) { break; } 
-    }
-    if(number%3**pow === 0) {
-        console.log(`${number} equel 3^${pow}`);
-    } else {
-        console.log(`${number} not equel 3^x`);
-    }
+// const number = 720;
+// let pow = 1;
+//     for (; 3**pow <= number; pow++) {
+//         if (number%3**pow != 0 || number === 3**pow) { break; } 
+//     }
+//     if(number%3**pow === 0) {
+//         console.log(`${number} equel 3^${pow}`);
+//     } else {
+//         console.log(`${number} not equel 3^x`);
+//     }
   
 
 
