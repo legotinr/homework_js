@@ -6,10 +6,10 @@ if (arrLength && arrLength >= 4) {
         alert(arr);
     }
 
-arr.sort();
-alert(arr);
-arr.splice(1, 3);
-alert(arr);
+    arr.sort();
+    alert(arr);
+    arr.splice(1, 3);
+    alert(arr);
 } else {
     alert('Incorrect array length. Enter only number more or equal 4');
 }
